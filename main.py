@@ -11,7 +11,7 @@ def get_orders():
 
     # Simulate corruption during midnight window
     #if current_hour == 1 and current_hour.minute < 10:
-    if now.minute < 55:
+    if now.minute < 60:
         corrupted_json = """
         {
           "order_id": 10234,

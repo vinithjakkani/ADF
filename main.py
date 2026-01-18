@@ -9,7 +9,8 @@ def get_orders():
     current_hour = datetime.datetime.now().hour
 
     # Simulate corruption during midnight window
-    if current_hour == 1 and current_hour.minute < 10:
+    #if current_hour == 1 and current_hour.minute < 10:
+    if now.minute < 55:
         corrupted_json = """
         {
           "order_id": 10234,

@@ -6,7 +6,8 @@ app = FastAPI()
 
 @app.get("/api/v1/orders")
 def get_orders():
-    current_hour = datetime.datetime.now().hour
+    #current_hour = datetime.datetime.now().hour
+    now=datetime.datetime.now().hour
 
     # Simulate corruption during midnight window
     #if current_hour == 1 and current_hour.minute < 10:
